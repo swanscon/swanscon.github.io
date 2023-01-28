@@ -47,6 +47,13 @@
                 justify-content: center;
                 align-items: center;
             }
+            .left-content{
+                &:hover{
+                    transform: none;
+                    border: 1px solid var(--color-grey-5);
+                    box-shadow: 1px 2px 15px rgba(0,0,0,.1);
+                }
+            }
         }
         .right-about{
             grid-template-columns: 1fr;
