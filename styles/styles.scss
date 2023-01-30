@@ -284,6 +284,12 @@ section{
     }
     .left-about{
         padding-right: 1rem;
+        .btn-con{
+            padding-top: 1.5rem;
+            padding-bottom: 1rem;
+            justify-content: center;
+            align-items: center;
+        }
         .left-content{
             padding: .5rem;
             display: flex;

@@ -300,6 +300,12 @@ section {
 .about-container .left-about {
   padding-right: 1rem;
 }
+.about-container .left-about .btn-con {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  justify-content: center;
+  align-items: center;
+}
 .about-container .left-about .left-content {
   padding: 0.5rem;
   display: flex;
@@ -775,7 +781,7 @@ section {
     padding: 0;
   }
   header .right-header {
-    padding: 2rem !important;
+    padding: 1rem !important;
   }
   .header-content {
     grid-template-columns: 1fr;
@@ -799,21 +805,31 @@ section {
     margin: 30px auto;
   }
   .header-content .right-header .name {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .about-container {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   .about-container .left-about {
-    padding-right: 0;
+    padding: 1.5rem;
   }
   .about-container .left-about p {
-    padding-left: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
   .about-container .left-about .btn-con {
     padding-top: 1.5rem;
+    padding-bottom: 1rem;
     justify-content: center;
     align-items: center;
+  }
+  .about-container .left-about .left-content {
+    flex-direction: column;
   }
   .about-container .left-about .left-content:hover {
     transform: none;
@@ -829,16 +845,19 @@ section {
     border: 1px solid var(--color-grey-5);
     box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
   }
+  .about-stats {
+    padding-bottom: 8rem;
+  }
   .portfolio {
     grid-template-columns: 1fr;
+    gap: 1rem;
     padding-bottom: 6rem;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   .portfolio .hover-item {
-    opacity: 90% !important;
+    opacity: 85% !important;
   }
   .portfolio .hover-item .icons .icon:hover {
     background-color: var(--color-primary) !important;
@@ -900,7 +919,7 @@ section {
     font-size: 2.5rem;
   }
   .main-title h2 .bg-text {
-    font-size: 3rem;
+    display: none;
   }
   .section {
     padding: 2rem 2.5rem !important;
@@ -928,9 +947,12 @@ section {
   .theme-btn {
     width: 40px;
     height: 40px;
-    top: 94%;
-    right: 5%;
+    top: 10px;
+    right: 10px;
     z-index: 10;
+  }
+  .theme-btn:active {
+    transform: none;
   }
   .main-btn {
     background-color: var(--color-secondary);
