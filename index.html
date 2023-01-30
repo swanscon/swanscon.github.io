@@ -387,16 +387,25 @@
                         </div>        
                     </div>
                     <div class="right-contact">
-                        <form action="https://formsubmit.co/swanscon@gmail.com" method="POST" class="contact-form">
+                        <form action="https://formsubmit.co/6ed06b91f184d08a03c7c8b76c14e3f5" method="POST" class="contact-form" id="my_form">
+                            <!-- Honeypot -->
+                            <input type="text" name="_honey" style="display: none;">
+
+                            <!-- Disable Captcha -->
+                            <input type="hidden" name="_captcha" value="false">
+
+                            <!-- Success Message Link -->
+                            <input type="hidden" name="_next" value="https://swanscon.github.io/formsubmit/portfolio-project/success.html">
+
                             <div class="input-control i-c-2">
-                                <input type="text" required placeholder="YOUR NAME">
-                                <input type="email" required placeholder="YOUR EMAIL">
+                                <input type="text" required placeholder="YOUR NAME" name="name">
+                                <input type="email" required placeholder="YOUR EMAIL" name="email">
                             </div>
                             <div class="input-control">
-                                <input type="text" required placeholder="SUBJECT">
+                                <input type="text" required placeholder="SUBJECT" name="subject">
                             </div>
                             <div class="input-control">
-                                <textarea name="" id="" cols="15" rows="8" placeholder="MESSAGE"></textarea>
+                                <textarea cols="15" rows="8" required placeholder="MESSAGE" name="message"></textarea>
                             </div>
                             <div class="submit-btn">
                                 <a href="javascript:{}" onclick="document.getElementById('my_form').submit();" class="main-btn">
